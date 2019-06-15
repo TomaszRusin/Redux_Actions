@@ -1,7 +1,7 @@
 
 // ADD_COMMENT
 
-const ADD_COMMENT = 'ADD_COMMENT'
+export const ADD_COMMENT = 'ADD_COMMENT'
 import uuid from 'uuid'
 
 function addComment(text) {
@@ -18,7 +18,7 @@ export function boundAddComment()
 
 // EDIT_COMMENT
 
-const EDIT_COMMENT = 'EDIT_COMMENT'
+export const EDIT_COMMENT = 'EDIT_COMMENT'
 
 function editComment(text, id) {
     return {
@@ -34,7 +34,7 @@ export function boundeditComment()
 
 // REMOVE_COMMENT
 
-const REMOVE_COMMENT = 'REMOVE_COMMENT'
+export const REMOVE_COMMENT = 'REMOVE_COMMENT'
 
 function removeComment(id) {
     return {
@@ -49,13 +49,13 @@ export function boundRemoveComment()
 
 // THUMB_DOWN_COMMENT
 
-const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT'
+export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT'
 
 function downComment(id) {
     return {
         type: THUMB_DOWN_COMMENT,
         id: id,
-        thumb_down: thumb_down + 1
+        votes: votes - 1
     }
 }
 
@@ -65,13 +65,13 @@ export function boundDownComment()
 
 // THUMB_UP_COMMENT
 
-const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT'
+export const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT'
 
 function upComment(id) {
     return {
         type: THUMB_UP_COMMENT,
         id: id,
-        thumb_up: thumb_up + 1
+        votes: votes + 1
     }
 }
 
