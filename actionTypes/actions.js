@@ -12,9 +12,7 @@ function addComment(text) {
     }
 }
 
-const boundAddComment = text => dispatch(addComment(text));
-
-export function boundAddComment()
+export const boundAddComment = text => dispatch(addComment(text));
 
 // EDIT_COMMENT
 
@@ -28,9 +26,7 @@ function editComment(text, id) {
     }
 }
 
-const boundeditComment = text => dispatch(editComment(text));
-
-export function boundeditComment()
+export const boundEditComment = text => dispatch(editComment(text));
 
 // REMOVE_COMMENT
 
@@ -43,9 +39,7 @@ function removeComment(id) {
     }
 }
 
-const boundRemoveComment = text => dispatch(removeComment(text));
-
-export function boundRemoveComment()
+export const boundRemoveComment = text => dispatch(removeComment(text));
 
 // THUMB_DOWN_COMMENT
 
@@ -59,9 +53,7 @@ function downComment(id) {
     }
 }
 
-const boundDownComment = text => dispatch(downComment(text));
-
-export function boundDownComment()
+export const boundDownComment = text => dispatch(downComment(text));
 
 // THUMB_UP_COMMENT
 
@@ -75,6 +67,4 @@ function upComment(id) {
     }
 }
 
-const boundUpComment = text => dispatch(upComment(text));
-
-export function boundUpComment()
+export const boundUpComment = text => dispatch(upComment(text));

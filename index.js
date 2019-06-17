@@ -1,8 +1,8 @@
 
-import {boundAddComment, boundRemoveComment, boundeditComment, boundUpComment, boundDownComment} from './actionTypes/actionTypes'
+import {boundAddComment, boundRemoveComment, boundEditComment, boundUpComment, boundDownComment} from './actionTypes/actions'
 
 boundAddComment('nowy komentarz!');
 boundRemoveComment(id);
-boundeditComment(text, id);
+boundEditComment(text, id);
 boundUpComment(id);
 boundDownComment(id);
